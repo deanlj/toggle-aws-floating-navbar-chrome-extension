@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Nav Toggle - Promo Tiles Preview</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            background: linear-gradient(90deg, #FF9900, #FFAD33);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 50px;
+        }
+        .tile-section {
+            max-width: 1500px;
+            margin: 0 auto 60px;
+        }
+        .tile-label {
+            color: #FF9900;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .tile-size {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .tile-container {
+            background: #232F3E;
+            padding: 20px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        .tile-container img {
+            display: block;
+            border-radius: 4px;
+        }
+        .small-tile img {
+            width: 440px;
+            height: 280px;
+        }
+        .large-tile {
+            overflow-x: auto;
+        }
+        .large-tile img {
+            width: 1400px;
+            height: 560px;
+            max-width: none;
+        }
+        .note {
+            margin-top: 15px;
+            color: #666;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chrome Web Store Promo Tiles</h1>
+    <p class="subtitle">AWS Nav Toggle Extension</p>
+    
+    <div class="tile-section">
+        <div class="tile-label">Small Promo Tile</div>
+        <div class="tile-size">440 × 280 pixels</div>
+        <div class="tile-container small-tile">
+            <img src="promo-small-440x280.png" alt="Small promo tile">
+        </div>
+        <p class="note">Shows before/after of the secondary navigation bar being hidden. Used in search results and extension cards.</p>
+    </div>
+    
+    <div class="tile-section">
+        <div class="tile-label">Large Promo Tile</div>
+        <div class="tile-size">1400 × 560 pixels</div>
+        <div class="tile-container large-tile">
+            <img src="promo-large-1400x560.png" alt="Large promo tile">
+        </div>
+        <p class="note">Used as featured banner in Chrome Web Store (scroll horizontally if needed)</p>
+    </div>
+</body>
+</html>
